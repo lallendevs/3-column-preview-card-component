@@ -1,0 +1,111 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders', sans-serif;
+    font-size: 36px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.vehicle-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 900px;
+}
+
+.vehicle-card {
+    flex: 1 1 0;
+    padding: 3rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    min-height: 27rem;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in;
+
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sedan button {
+    color:hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 768px) {
+  .vehicle-card-wrapper {
+    flex-direction: column;
+  }
+  .vehicle-card {
+    width: 100%;
+    max-width: none;
+    border-radius: 0px;
+  }
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+}
